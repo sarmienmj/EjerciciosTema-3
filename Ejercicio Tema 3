@@ -1,0 +1,23 @@
+public class Main {
+    public static void main(String[] args) {
+        int result = suma(1,2,3);
+        System.out.println(result);
+
+        Coche spark = new Coche();
+        spark.añadirPuerta();
+        spark.añadirPuerta();
+        System.out.println(spark.puertas);
+    }
+    public static int suma(int a, int b, int c){
+        int r = a+b;
+        r = r + c;
+        return r;
+    }
+}
+class Coche {
+    public int puertas = 2;
+
+    public void añadirPuerta(){
+        this.puertas++;
+    }
+}
